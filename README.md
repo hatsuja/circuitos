@@ -23,8 +23,8 @@
   * [Semana 2](Unidad1/Semana2.md)
   * [Semana 3](Unidad1/Semana3.md)
   * [Semana 4](Unidad1/Semana4.md)
-* **Unidad 2** *(Pendiente)*
-* **Unidad 3** *(Pendiente)*
+* **Unidad 2** *(.....)*
+* **Unidad 3** *(.....)*
 ---
 
 
