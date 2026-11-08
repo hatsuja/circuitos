@@ -11,7 +11,7 @@
 *   **Facultad:** Energía, las Industrias y los Recursos Naturales no Renovables
 *   **Carrera:** Computación
 *   **Asignatura:** Diseño de Circuitos
-
+*   **Alumno:** Juan Pablo Jumbo Orellana
 
 ---
 
