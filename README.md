@@ -15,15 +15,16 @@
 
 ---
 
+
 ## 📂 Estructura del Repositorio
 
-Para facilitar la navegación, los contenidos se encuentran organizados de la siguiente manera:
-
-1.  **[Índice de Contenidos](index.md):**
-* > Unidad 1
-* > Unidad 2
-* > Unidad 3
-
+* **Unidad 1**
+  * [Semana 1](Unidad1/Semana1.md)
+  * [Semana 2](Unidad1/Semana2.md)
+  * [Semana 3](Unidad1/Semana3.md)
+  * [Semana 4](Unidad1/Semana4.md)
+* **Unidad 2** *(Pendiente)*
+* **Unidad 3** *(Pendiente)*
 ---
 
 
