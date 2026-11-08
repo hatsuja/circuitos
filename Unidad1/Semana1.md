@@ -1,4 +1,6 @@
-# Semana 1
+# Resumen Semana I
+
+---
 
 ## 1. Fundamentos de Sistemas Posicionales
 
@@ -33,9 +35,6 @@ $$\implies 25_{10} = 11001_2$$
 * **Hexadecimal (Base 16):** Cada dígito hexadecimal equivale exactamente a un bloque de $4$ bits ($16 = 2^4$).
 * **Octal (Base 8):** Cada dígito octal equivale a un bloque de $3$ bits ($8 = 2^3$).
 
-
----
-
 ## 2. Representación de Números con Signo: Complemento a Dos ($C_2$)
 
 En hardware no existe el signo «-» físico; por convención en complemento a dos con un ancho fijado de $n$ bits:
@@ -55,8 +54,6 @@ $$\text{Negativo}(A) = \text{NOT}(A) + 1$$
 * Inversión de bits: $11111010_2$
 * Sumar $1$: $11111010_2 + 1 = 11111011_2$
 
----
-
 ## 3. Códigos Binarios
 
 | Código | Características Principales | Aplicación Práctica |
@@ -64,8 +61,6 @@ $$\text{Negativo}(A) = \text{NOT}(A) + 1$$
 | **BCD (8421)** | Codifica cada dígito decimal ($0$ a $9$) en un cuarteto de $4$ bits. Las combinaciones de $1010_2$ ($10$) a $1111_2$ ($15$) no son válidas. | Controladores de displays de 7 segmentos y voltímetros digitales. |
 | **Código Gray** | Código no ponderado de distancia unitaria: entre dos estados consecutivos **solo cambia 1 bit**, evitando transiciones intermedias espurias. | Encoders de posición angular, sensores industriales y ordenamiento de mapas de Karnaugh. |
 | **ASCII** | Código alfanumérico estándar de $7$ bits ($128$ combinaciones posibles) que codifica letras, números y caracteres de control. | Transmisión de texto y comunicación serial (ejemplo: `'A'` $= 65_{10} = 01000001_2 = 41_{16}$). |
-
----
 
 ## 4. Compuertas Lógicas
 
@@ -117,16 +112,12 @@ La salida es `1` si las entradas son diferentes; es `0` si son iguales: $Y = A \
 | 1 | 0 | 1 |
 | 1 | 1 | 0 |
 
----
-
 ## 6. Modelado de Enunciados a Compuertas Lógicas
 
 * **«La alarma suena solo si las dos puertas están abiertas»:** Ambas condiciones deben cumplirse simultáneamente $\implies$ **AND** ($Y = A \cdot B$).
 * **«La luz se enciende si se pulsa cualquiera de los pulsadores»:** Al menos una señal activa la salida $\implies$ **OR** ($Y = A + B$).
 * **«El sistema se activa si las dos selecciones son distintas»:** Detector de discrepancia $\implies$ **XOR** ($Y = A \oplus B$).
 * **«El actuador se apaga cuando el sensor se activa»:** Inversión de estado $\implies$ **NOT** ($Y = S'$).
-
----
 
 ## 7. Ejemplo de Análisis Combinacional: Tabla de Verdad
 
@@ -146,3 +137,5 @@ Número de combinaciones: $2^3 = 8$ filas ($0$ a $7$).
 | 5 | 1 | 0 | 1 | 0 | 0 | **0** |
 | 6 | 1 | 1 | 0 | 1 | 1 | **1** |
 | 7 | 1 | 1 | 1 | 1 | 0 | **1** |
+
+---
