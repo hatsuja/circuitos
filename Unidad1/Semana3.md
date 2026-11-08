@@ -66,7 +66,7 @@ Las filas y columnas de un mapa de Karnaugh se ordenan siguiendo la secuencia de
 
 ## 3. Condiciones Indiferentes (*Don't Cares* / $X$)
 
-En muchas aplicaciones prácticas existen combinaciones de entrada que **nunca ocurrirán** (por ejemplo, los valores $1010_2$ a $1111_2$ en un decodificador BCD) o cuyas salidas no tienen efecto sobre el sistema. Estas entradas se representan con una «$X$»:
+En muchas aplicaciones prácticas existen combinaciones de entrada que **nunca ocurrirán** (por ejemplo, los valores $1010_2$ a $1111_2$ en un decodificador BCD) o cuyas salidas no tienen efecto sobre el sistema. Estas entradas se representan con una «X»:
 
 $$
 F = \sum m(\text{minitérminos}) + d(\text{indiferentes})
