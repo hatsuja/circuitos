@@ -50,7 +50,7 @@ En hardware no existe el signo «-» físico; por convención en complemento a d
 
 $$\text{Negativo}(A) = \text{NOT}(A) + 1$$
 
-*Ejemplo (representar $5_{10}$ en 8 bits):*
+*Ejemplo (representar -5 en 8 bits):*
 * $+5_{10} = 00000101_2$
 * Inversión de bits: $11111010_2$
 * Sumar $1$: $11111010_2 + 1 = 11111011_2$
