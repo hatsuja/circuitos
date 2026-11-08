@@ -19,7 +19,7 @@ $$N = d_n r^n + \dots + d_1 r^1 + d_0 r^0 + d_{-1} r^{-1} + \dots$$
 #### De Decimal a Binario (Divisiones sucesivas)
 Se divide sucesivamente el valor decimal entre $2$ registrando los residuos hasta obtener cociente $0$. Los residuos se leen en orden inverso (del último al primero / de abajo hacia arriba):
 
-*Ejemplo: Convertir $25_{10}$ a binario:*
+*Ejemplo: Convertir 25 a binario:*
 * $25 \div 2 = 12$, resto $= 1$ (LSB)
 * $12 \div 2 = 6$, resto $= 0$
 * $6 \div 2 = 3$, resto $= 0$
