@@ -1,15 +1,10 @@
-# Resumen de Diseño de Circuitos (Semanas 1 a 4)
-
-Guía rápida y al grano con los conceptos clave, trucos y lógica detrás de cada tema para repasar antes de exámenes o prácticas de laboratorio.
-
+#Diseño de Circuitos
 ---
 
 ## Semana 1: Sistemas Numéricos, Códigos y Compuertas Lógicas
 
-En electrónica digital todo se reduce a voltajes: encendido ($1$) o apagado ($0$). A partir de ahí construimos números, texto y decisiones.
-
-### 1. Conversión de bases sin rodeos
-* **Decimal a Binario:** Divide el número para $2$ una y otra vez anotando los residuos. Al final, lee los residuos de abajo hacia arriba.
+### 1. Conversión
+* **Decimal a Binario:** Divide el número para 2 una y otra vez anotando los residuos. Al final, lee los residuos de abajo hacia arriba.
 * **El atajo de los bloques (Binario $\leftrightarrow$ Hexa / Octal):**
   * Cada dígito **hexadecimal** equivale exactamente a un paquete de **4 bits** ($16 = 2^4$).  
     *Ejemplo:* $1110 \; 0101_2 \rightarrow \text{E}5_{16}$.
