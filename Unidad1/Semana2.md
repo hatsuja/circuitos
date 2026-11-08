@@ -4,7 +4,6 @@
 
 ## 1. Álgebra de Boole
 
-
 ### 1.1. Postulados de Huntington y Principio de Dualidad
 
 El **Principio de Dualidad** establece que si una expresión booleana es válida, la expresión obtenida al intercambiar los operadores $+$ por $\cdot$ (y viceversa) junto con los elementos neutros $0$ por $1$ (y viceversa) también es estrictamente válida.
@@ -17,7 +16,6 @@ El **Principio de Dualidad** establece que si una expresión booleana es válida
 | **Distributiva** | $X \cdot (Y + Z) = (X \cdot Y) + (X \cdot Z)$ | $X + (Y \cdot Z) = (X + Y) \cdot (X + Z)$ |
 
 #### La distributiva notable: $A + BC = (A + B)(A + C)$
----
 
 ### 1.2. Tabla de Consulta de Teoremas Booleanos
 
@@ -30,8 +28,6 @@ El **Principio de Dualidad** establece que si una expresión booleana es válida
 | **Absorción del complemento** | $X + X'Y = X + Y$ | $X(X' + Y) = XY$ |
 | **Adyacencia** | $XY + XY' = X$ | $(X + Y)(X + Y') = X$ |
 | **Consenso** | $XY + X'Z + YZ = XY + X'Z$ | $(X+Y)(X'+Z)(Y+Z) = (X+Y)(X'+Z)$ |
-
----
 
 ## 2. Leyes de De Morgan
 
@@ -49,8 +45,6 @@ $$
 ### Equivalencias esquemáticas
 * Una compuerta $\text{NAND}$ equivale a una compuerta $\text{OR}$ con entradas invertidas (*Negative-OR*).
 * Una compuerta $\text{NOR}$ equivale a una compuerta $\text{AND}$ con entradas invertidas (*Negative-AND*).
-
----
 
 ## 3. Minitérminos y Maxitérminos
 
@@ -75,8 +69,6 @@ Para un sistema de $n$ variables de entrada, existen $2^n$ combinaciones posible
 | 5 | 1 | 0 | 1 | $m_5 = AB'C$ | $M_5 = A' + B + C'$ |
 | 6 | 1 | 1 | 0 | $m_6 = ABC'$ | $M_6 = A' + B' + C$ |
 | 7 | 1 | 1 | 1 | $m_7 = ABC$ | $M_7 = A' + B' + C'$ |
-
----
 
 ## 4. Formas Canónicas
 
