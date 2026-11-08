@@ -1,15 +1,7 @@
-# Semana 3: Mapas de Karnaugh, Condiciones Indiferentes y Universalidad Lógica
-
-## 1. Objetivos de Aprendizaje
-
-1. **Construir y simplificar** funciones booleanas de 3 y 4 variables mediante Mapas de Karnaugh (K-Maps).
-2. **Identificar** implicantes primos e implicantes primos esenciales para obtener expresiones mínimas en suma de productos (SOP) o producto de sumas (POS).
-3. **Optimizar** circuitos aprovechando condiciones indiferentes (*don't cares* / $X$) provenientes de estados no válidos.
-4. **Implementar** funciones lógicas utilizando exclusivamente compuertas universales ($\text{NAND}$ o $\text{NOR}$), evaluando el ahorro en compuertas y circuitos integrados (CI).
-
+# Semana III
 ---
 
-## 2. Mapas de Karnaugh (K-Maps)
+## 1. Mapas de Karnaugh (K-Maps)
 
 Un mapa de Karnaugh es una representación visual de la tabla de verdad en forma de matriz bidimensional. Su objetivo es aplicar de forma directa y visual el teorema de adyacencia lógica:
 
@@ -17,7 +9,7 @@ $$
 X \cdot Y + X \cdot Y' = X(Y + Y') = X
 $$
 
-### 2.1. El Rol Crucial del Código Gray
+### 1.1. El Rol Crucial del Código Gray
 
 Las filas y columnas de un mapa de Karnaugh se ordenan siguiendo la secuencia de **Código Gray** ($00, 01, 11, 10$):
 * Entre dos celdas contiguas (horizontal o verticalmente) **solo cambia 1 bit**.
@@ -26,7 +18,7 @@ Las filas y columnas de un mapa de Karnaugh se ordenan siguiendo la secuencia de
 
 ---
 
-### 2.2. Estructura de Mapas de 3 y 4 Variables
+### 1.2. Estructura de Mapas de 3 y 4 Variables
 
 #### Mapa de 3 Variables ($A, B, C$)
 * Filas: Variable $A \in \{0, 1\}$.
@@ -52,7 +44,7 @@ Las filas y columnas de un mapa de Karnaugh se ordenan siguiendo la secuencia de
 
 ---
 
-### 2.3. Reglas Estrictas de Agrupamiento
+### 1.3. Reglas Estrictas de Agrupamiento
 
 1. **Tamaño en potencia de dos ($2^k$):** Los grupos de unos (`1`) solo pueden contener $1, 2, 4, 8$ o $16$ celdas.
 2. **Forma rectangular o cuadrada:** Se agrupa únicamente en bloques rectangulares. Se prohíben agrupaciones en forma de «L», diagonales o de tamaños no potencia de dos (grupos de 3, 5, 6 celdas son inválidos).
@@ -64,7 +56,7 @@ Las filas y columnas de un mapa de Karnaugh se ordenan siguiendo la secuencia de
 
 ---
 
-## 3. Implicantes Primos y Esenciales
+## 2. Implicantes Primos y Esenciales
 
 * **Implicante Primo (PI):** Cualquier agrupación rectangular válida de tamaño $2^k$ que no puede fusionarse en un grupo mayor.
 * **Implicante Primo Esencial (EPI):** Es un implicante primo que cubre **al menos un `1` que ningún otro grupo puede cubrir**. 
@@ -72,9 +64,9 @@ Las filas y columnas de un mapa de Karnaugh se ordenan siguiendo la secuencia de
 
 ---
 
-## 4. Condiciones Indiferentes (*Don't Cares* / $X$)
+## 3. Condiciones Indiferentes (*Don't Cares* / $X$)
 
-En muchas aplicaciones prácticas existen combinaciones de entrada que **nunca ocurrirán** (por ejemplo, los valores $1010_2$ a $1111_2$ en un decodificador BCD) o cuyas salidas no tienen efecto sobre el sistema. Estas entradas se representan con una «$X$» o letra «$d$»:
+En muchas aplicaciones prácticas existen combinaciones de entrada que **nunca ocurrirán** (por ejemplo, los valores $1010_2$ a $1111_2$ en un decodificador BCD) o cuyas salidas no tienen efecto sobre el sistema. Estas entradas se representan con una «$X$»:
 
 $$
 F = \sum m(\text{minitérminos}) + d(\text{indiferentes})
@@ -88,25 +80,13 @@ $$
 | **Como 0** | Se ignora. | Ninguna $X$ está obligada a ser cubierta si no ayuda a simplificar un `1`. |
 | **Nunca sola** | **Prohibido.** | Un grupo formado exclusivamente por celdas $X$ añade un término redundante sin beneficio. |
 
-### Ejemplo Guiado: Detector de Dígito BCD $\ge 5$
-
-Sea $F(A, B, C, D) = \sum m(5, 6, 7, 8, 9) + d(10, 11, 12, 13, 14, 15)$:
-
-* **Sin aprovechar las $X$ (asumiéndolas como `0`):**
-  $$F = AB'C' + A'BD + A'BC \quad (9 \text{ literales})$$
-* **Aprovechando las $X$ (asumiendo selectivamente como `1`):**
-  * Grupo 1 (8 celdas, filas 11 y 10 completas: $\{8, 9, 10, 11, 12, 13, 14, 15\}$): produce el literal $A$.
-  * Grupo 2 (4 celdas: $\{5, 7, 13, 15\}$): produce el término $BD$.
-  * Grupo 3 (4 celdas: $\{6, 7, 14, 15\}$): produce el término $BC$.
-  $$F_{\text{mín}} = A + BD + BC \quad (5 \text{ literales})$$
-
 ---
 
-## 5. Universalidad de Compuertas NAND y NOR
+## 4. Universalidad de Compuertas NAND y NOR
 
 Una compuerta es **universal** si permite construir por sí sola cualquier función lógica sin recurrir a otros tipos de compuertas.
 
-### 5.1. Construcción de Operaciones Básicas
+### 4.1. Construcción de Operaciones Básicas
 
 | Operación | Implementación con Solo $\text{NAND}$ | Implementación con Solo $\text{NOR}$ |
 | :---: | :---: | :---: |
@@ -116,7 +96,7 @@ Una compuerta es **universal** si permite construir por sí sola cualquier funci
 
 ---
 
-### 5.2. Conversión Sistemática de Niveles
+### 4.2. Conversión Sistemática de Niveles
 
 #### Suma de Productos (SOP) a Red $\text{NAND}-\text{NAND}$
 Dada una suma de términos producto, se aplica doble negación y leyes de De Morgan:
@@ -142,7 +122,7 @@ $$
 
 ---
 
-## 6. Optimización y Métricas en Hardware (Familia TTL 74LS)
+## 5. Optimización y Métricas en Hardware (Familia TTL 74LS)
 
 En ingeniería digital, la métrica final de diseño no es solo la cantidad de literales en papel, sino el **conteo total de chips (circuitos integrados)** en la placa física:
 
