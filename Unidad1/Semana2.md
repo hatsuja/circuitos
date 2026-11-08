@@ -80,3 +80,4 @@ Cualquier función lógica puede representarse de forma única mediante sus mini
    $$F = \prod M(\text{filas donde } F = 0)$$
 
 ---
+[**Volver al Inicio**](https://github.com/hatsuja/circuitos/tree/main)
