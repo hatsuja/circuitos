@@ -33,9 +33,6 @@ $$\implies 25_{10} = 11001_2$$
 * **Hexadecimal (Base 16):** Cada dígito hexadecimal equivale exactamente a un bloque de $4$ bits ($16 = 2^4$).
 * **Octal (Base 8):** Cada dígito octal equivale a un bloque de $3$ bits ($8 = 2^3$).
 
-*Ejemplo:*
-$$11100101_2 = \underbrace{1110}_{\text{E}} \; \underbrace{0101}_{5} = \text{E}5_{16}$$
-$$11100101_2 = \underbrace{011}_{3} \; \underbrace{100}_{4} \; \underbrace{101}_{5} = 345_8$$
 
 ---
 
