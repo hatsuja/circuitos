@@ -4,7 +4,6 @@
 
 ## 1. Álgebra de Boole
 
-El álgebra de Boole se define sobre el conjunto binario $\{0, 1\}$ mediante tres operaciones fundamentales: suma lógica o disyunción ($+$ / $\text{OR}$), producto lógico o conjunción ($\cdot$ / $\text{AND}$) y negación o complemento ($'$ o $\overline{\phantom{A}}$ / $\text{NOT}$).
 
 ### 3.1. Postulados de Huntington y Principio de Dualidad
 
