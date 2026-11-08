@@ -114,3 +114,7 @@ En ingeniería digital, la métrica final de diseño no es solo la cantidad de l
 * Al unificar todo el diseño bajo la universalidad $\text{NAND}$, se emplea un único tipo de circuito integrado:
   * $74\text{LS}00$ ($4$ compuertas $\text{NAND}$ de 2 entradas)
 * **Resultado:** Reducción drástica del área de circuito impreso, simplificación del inventario de componentes y menor retardo de propagación acumulado.
+
+---
+
+[**Volver al Inicio**](https://github.com/hatsuja/circuitos/tree/main)
