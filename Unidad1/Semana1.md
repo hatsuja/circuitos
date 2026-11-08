@@ -139,3 +139,4 @@ Número de combinaciones: $2^3 = 8$ filas ($0$ a $7$).
 | 7 | 1 | 1 | 1 | 1 | 0 | **1** |
 
 ---
+[**Volver al Inicio**](https://github.com/hatsuja/circuitos/tree/main)
