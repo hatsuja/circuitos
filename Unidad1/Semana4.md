@@ -158,3 +158,4 @@ $$(A > B) = A_3 B_3' + x_3 A_2 B_2' + x_3 x_2 A_1 B_1' + x_3 x_2 x_1 A_0 B_0'$$
 
 ---
 
+[**Volver al Inicio**](https://github.com/hatsuja/circuitos/tree/main)
