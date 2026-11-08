@@ -78,7 +78,7 @@ Para un sistema de $n$ variables de entrada, existen $2^n$ combinaciones posible
 
 ---
 
-## 6. Formas Canónicas
+## 4. Formas Canónicas
 
 Cualquier función lógica puede representarse de forma única mediante sus minitérminos o maxitérminos:
 
