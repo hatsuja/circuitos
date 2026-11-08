@@ -98,29 +98,10 @@ Una compuerta es **universal** si permite construir por sí sola cualquier funci
 
 ### 4.2. Conversión Sistemática de Niveles
 
-#### Suma de Productos (SOP) a Red $\text{NAND}-\text{NAND}$
-Dada una suma de términos producto, se aplica doble negación y leyes de De Morgan:
 
-$$
-F = P_1 + P_2 \iff F = \overline{\overline{P_1 + P_2}} = \overline{\overline{P_1} \cdot \overline{P_2}}
-$$
+<img width="1307" height="662" alt="image" src="https://github.com/user-attachments/assets/f9caad74-6558-47b7-b6fd-acba6b7f4747" />
 
-* **Primer nivel:** Compuertas $\text{NAND}$ para calcular cada producto negado ($\overline{P_i}$).
-* **Segundo nivel:** Una compuerta $\text{NAND}$ final que agrupa los resultados del primer nivel.
-* **Inversión de literales:** Si una variable entra negada (ej. $B'$), se genera conectando ambas entradas de una compuerta $\text{NAND}$ a la variable $B$.
 
-#### Producto de Sumas (POS) a Red $\text{NOR}-\text{NOR}$
-De forma análoga y dual, para un producto de sumas:
-
-$$
-F = S_1 \cdot S_2 \iff F = \overline{\overline{S_1 \cdot S_2}} = \overline{\overline{S_1} + \overline{S_2}}
-$$
-
-* **Criterio de selección:**
-  * Si la forma mínima es **SOP** $\implies$ Conviene implementar en topología **$\text{NAND}-\text{NAND}$**.
-  * Si la forma mínima es **POS** $\implies$ Conviene implementar en topología **$\text{NOR}-\text{NOR}$**.
-
----
 
 ## 5. Optimización y Métricas en Hardware (Familia TTL 74LS)
 
