@@ -1,4 +1,4 @@
-
+# Semana 1
 
 ## 1. Fundamentos de Sistemas Posicionales
 
@@ -14,7 +14,7 @@ $$N = d_n r^n + \dots + d_1 r^1 + d_0 r^0 + d_{-1} r^{-1} + \dots$$
 | :--- | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
 | **Valor decimal** | $128$ | $64$ | $32$ | $16$ | $8$ | $4$ | $2$ | $1$ |
 
-### 2.1. Conversiones de Base
+### 1.1. Conversiones de Base
 
 #### De Decimal a Binario (Divisiones sucesivas)
 Se divide sucesivamente el valor decimal entre $2$ registrando los residuos hasta obtener cociente $0$. Los residuos se leen en orden inverso (del último al primero / de abajo hacia arriba):
@@ -36,40 +36,28 @@ $$\implies 25_{10} = 11001_2$$
 
 ---
 
-## 3. Representación de Números con Signo: Complemento a Dos ($C_2$)
+## 2. Representación de Números con Signo: Complemento a Dos ($C_2$)
 
-En hardware no existe el signo «$-$» físico; por convención en complemento a dos con un ancho fijado de $n$ bits:
+En hardware no existe el signo «-» físico; por convención en complemento a dos con un ancho fijado de $n$ bits:
 * **Bit más significativo (MSB = bit de la izquierda):**
   * `0`: Número positivo o cero.
   * `1`: Número negativo.
 
-### Analogía del Cuentakilómetros
-Si un cuentakilómetros mecánico parte de `000` y retrocede una unidad, pasa a marcar `999`. En un registro digital de 4 bits ocurre lo mismo:
-$$0000_2 - 1 = 1111_2 \iff -1_{10}$$
-
-### Algoritmo de Obtención de $-A$
+###  Obtención numero negativo $-A$
 1. Escribir la magnitud en binario completando a la longitud de $n$ bits.
 2. Invertir todos los bits (obtención del complemento a uno).
 3. Sumar $1$ al resultado:
 
 $$\text{Negativo}(A) = \text{NOT}(A) + 1$$
 
-*Ejemplo (representar $-5_{10}$ en 8 bits):*
+*Ejemplo (representar $5_{10}$ en 8 bits):*
 * $+5_{10} = 00000101_2$
 * Inversión de bits: $11111010_2$
 * Sumar $1$: $11111010_2 + 1 = 11111011_2$
 
-### Rango de Representación
-Para un registro con longitud de $n$ bits:
-
-$$[-2^{n-1}, \; 2^{n-1}-1]$$
-
-* Para $4$ bits: de $-8$ a $+7$.
-* Para $8$ bits: de $-128$ a $+127$.
-
 ---
 
-## 4. Códigos Binarios
+## 3. Códigos Binarios
 
 | Código | Características Principales | Aplicación Práctica |
 | :--- | :--- | :--- |
@@ -79,7 +67,7 @@ $$[-2^{n-1}, \; 2^{n-1}-1]$$
 
 ---
 
-## 5. Niveles Lógicos y Compuertas Básicas
+## 4. Compuertas Lógicas
 
 ### Niveles Eléctricos
 * Los circuitos electrónicos digitales operan con **rangos de voltaje**.
