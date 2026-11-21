@@ -107,12 +107,3 @@ Implementar la función de activación de alarma $F(A, B, C) = \Sigma m(0, 3, 5,
 
 ---
 
-## 7. Comparativa de Diseño: Compuertas vs. Multiplexor
-
-En el ejercicio anterior ($F(A,B,C) = \Sigma m(0, 3, 5, 6)$), si intentáramos simplificar por Mapas de Karnaugh, los unos quedan en diagonal (tablero de ajedrez) y **no se pueden agrupar**, obligándonos a usar múltiples compuertas `XOR`, `XNOR` o un arreglo grande de `AND`/`OR`/`NOT`.
-
-| Aspecto | Solución con Compuertas | Solución con Multiplexor |
-| :--- | :--- | :--- |
-| **Simplificación** | Obligatoria (Karnaugh / Boole). | **No requerida** (directo de la tabla). |
-| **Hardware necesario** | Múltiples integrados y cableado complejo. | **1 solo chip** (ej. 74LS151). |
-| **Flexibilidad** | Cambiar un bit de la tabla obliga a rediseñar. | Cambiar un bit solo requiere mover un cable de `+Vcc` a `GND`. |
