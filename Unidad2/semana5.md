@@ -38,7 +38,7 @@ Mientras el MUX/DEMUX mueven datos sin alterarlos, estos bloques **transforman e
 * **Decodificador:** Expande información. Recibe $n$ bits binarios y activa exclusivamente **1 de sus $2^n$ salidas** (funciona como detector de minitérminos).
   * *Estructura interna:* Compuertas `NOT` y `AND`.
 
-### Ejemplo Propio Resuelto 2: Panel de control de 4 botones (Codificador 4 a 2)
+### Ejemplo: Panel de control de 4 botones (Codificador 4 a 2)
 Diseñamos un panel con 4 pulsadores ($D_0, D_1, D_2, D_3$) conectado a un codificador de 4 a 2 líneas con salidas $A_1A_0$:
 
 * **Ecuaciones de diseño:**
